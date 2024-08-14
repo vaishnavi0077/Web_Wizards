@@ -6,31 +6,12 @@
     <title>Lorem ipsum</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="Web_Wizards/style.css">
-
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <section class="">
-        <div class="navbar grid grid-flow-col justify-between w-full bg-slate-500 px-10 " >
-            <div class="logo">
-                <img src="" alt="image">
-                <span class="text-2xl">Lorem, ipsum.</span>
-            </div>
-
-            <div class="search">
-                <input class="px-4 border-2 border-gray-500 rounded-lg w-80 m-3 align-middle " type="search" name="search" id="search" placeholder="search">
-            </div>
-
-            <div class="login bg-black w-32 h-8 rounded-lg text-white align-middle text-center">
-                <a href="login1.html" aria-placeholder="login">Login/</a>
-                <a href="register.html">Register</a>
-            </div>
-            <div class="sidebar">
-                
-            </div>
-        </div>
-    </section> -->
+    <!-- ////////////////////////////////// navbar ////////////////////////////////////////////////////////////////-->
     <nav
-    class="relative px-4 py-2 flex justify-between items-center bg-black dark:bg-gray-800 border-b-2 dark:border-gray-600">
+    class=" header relative px-4 py-2 flex justify-between items-center bg-black dark:bg-gray-800 border-b-2 dark:border-gray-600">
     
     <a class="text-2xl font-bold text-violet-600 dark:text-white flex flex-row " href="#">
         <img class="" src="" alt="image">
@@ -51,7 +32,7 @@
 
         <li>
             <div class=" relative mx-auto text-black">
-                <input class="border border-green-300 font-semibold placeholder-current h-8 justify-center px-5 pr-16  rounded-lg text-sm focus:outline-none dark:bg-gray-500 dark:border-gray-50 dark:text-gray-200 bg-green-100 hover:bg-white " type="search" name="search" placeholder="Search">
+                <input class="border border-gray-200 bg-white font-semibold placeholder-slate-500 h-8 justify-center px-5 pr-16  rounded-lg text-sm focus:outline-none dark:bg-gray-500 dark:border-gray-50 dark:text-gray-200 hover:bg-white " type="search" name="search" placeholder="Search">
 
                 <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
                         <svg class="text-green-900 dark:text-gray-200 h-3 w-4 fill-current "
@@ -71,32 +52,25 @@
     <div class="hidden lg:flex">
 
         <button id="theme-toggle" type="button" class="hidden lg:inline-block lg:ml-auto py-1.5 px-3 m-1 text-center bg-black border border-black rounded-md text-black  dark:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-700">
-                <!-- <svg id="theme-toggle-dark-icon" class="w-5 h-6 hidden " fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                </svg> -->
+               
                 <svg id="theme-toggle-light-icon" class="hidden" fill="currentColor" viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg">
                    
                 </svg>
         </button>
 
-        <!-- <a href="https://tailwindflex.com/playground">
-            <button class=" py-1.5 px-3 m-1 text-center bg-violet-700 border rounded-md text-white  hover:bg-violet-500 hover:text-gray-100 dark:text-gray-200 dark:bg-violet-700 hidden lg:block">
-                    Tailwind Playground
-            </button>
-        </a> -->
-
+      <!-- //////////////////////////////////////////Sign in///////////////////////////////////////////////// -->
         <div>
             <span class="hidden" id="util_data" data="{{ json_encode($util_data) }}"></span>
-            <a class="  py-1.5 px-3 m-1 text-center bg-green-100  border border-green-300 rounded-md text-[#228B22] font-extrabold  hover:bg-gray-100 dark:text-purple-600 dark:bg-gray-700 hidden lg:inline-block hover:text-black"
+            <a class="  py-1.5 px-3 m-1 text-center border-gray-200 bg-white  border rounded-md text-blue-700 font-extrabold  hover:bg-gray-100 dark:text-purple-600 dark:bg-gray-700 hidden lg:inline-block hover:text-black"
                 href="login1.html">
                 Sign In
             </a>
         </div>
+        <!-- //////////////////////////////////////////Sign up///////////////////////////////////////////////// -->
         <div>
             <span class="hidden" id="util_data" data="{{ json_encode($util_data) }}"></span>
-            <a class=" py-1.5 px-3 m-1 text-center bg-green-100  border border-green-300 rounded-md text-[#228B22] font-extrabold  hover:bg-gray-100 dark:text-purple-600 dark:bg-gray-700 hidden lg:inline-block hover:text-black"
+            <a class=" py-1.5 px-3 m-1 text-center border-gray-200 bg-white border rounded-md text-[#228B22] font-extrabold  hover:bg-gray-100 dark:text-purple-600 dark:bg-gray-700 hidden lg:inline-block hover:text-black"
                 href="register.html">
                 Sign-up
             </a>
@@ -113,7 +87,7 @@
 <div class="navbar-menu relative z-50 hidden">
     <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-50"></div>
     <nav
-        class="fixed backdrop-blur-md dark:bg-gray-600 top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 border-r overflow-y-auto">
+        class=" header fixed backdrop-blur-md dark:bg-gray-600 top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 border-r overflow-y-auto">
 
         <div class="flex items-center mb-8">
             <a class="mr-auto text-2xl font-bold  text-violet-600 dark:text-gray-100"
@@ -131,7 +105,7 @@
         </div>
 
         <div class=" relative mx-auto text-gray-600">
-            <input class="border-2 border-gray-300 bg-gray-300 h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none placeholder-black dark:bg-gray-500 dark:border-gray-50 bg-green-100 border-green-300 text-black font-semibold" type="search" name="search" placeholder="Search">
+            <input class="border-2 border-gray-200 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none placeholder-black dark:bg-gray-500 dark:border-gray-50  text-black font-semibold" type="search" name="search" placeholder="Search">
 
             <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
                     <svg class="text-purple-800 dark:text-gray-200 h-4 w-4 fill-current"
@@ -151,20 +125,15 @@
                  <button id="theme-toggle-2" type="button" class=" py-2.5 w-[97.6%] mb-3 rounded-xl flex justify-center align-middle py-1.5 px-3 m-1 text-center  text-black  dark:text-gray-300 dark:bg-gray-700  dark:hover:bg-gray-700">
                      
                    
-                <a class="block py-1.5 px-3 m-1 text-center  border-green-300 rounded-md text-green-800 font-extrabold hover:text-black  hover:bg-gray-100 dark:text-gray-300 dark:bg-gray-700 px-4 py-3 mb-3 text-sm text-center font-semibold rounded-xl bg-green-100"
+                <a class="block   m-1 border-gray-200 bg-white  text-green-800 font-extrabold hover:text-black  hover:bg-gray-100 dark:text-gray-300 dark:bg-gray-700 px-4 py-3 mb-3 text-sm text-center  rounded-xl "
                     href="register.html">
                     Sign-up
                 </a>
-                <a class="block py-1.5 px-3 m-1 text-center  border-green-300 rounded-md text-green-800 font-extrabold hover:text-black  hover:bg-gray-100 dark:text-gray-300 dark:bg-gray-700 px-4 py-3 mb-3 text-sm text-center font-semibold rounded-xl bg-green-100"
+                <a class="block  m-1 text-center   text-blue-700 font-extrabold hover:text-black  hover:bg-gray-100 dark:text-gray-300 dark:bg-gray-700 px-4 py-3 mb-3 text-sm rounded-xl border-gray-200 bg-white"
                     href="login1.html">
                     Sign in
                 </a>
                 </button> 
-
-                <!-- <a class="block py-1.5 px-3 m-1 text-center bg-violet-700 border rounded-md text-white  hover:bg-violet-500 hover:text-gray-100 dark:text-gray-200 dark:bg-violet-700 px-4 py-3 mb-2 text-xs text-center text-white font-semibold bg-violet-600 hover:bg-violet-700  rounded-xl"
-                    href="https://tailwindflex.com/playground">
-                    Tailwind Playground
-                </a> -->
 
             </div>
            
@@ -172,130 +141,94 @@
     </nav>
 </div>
 
-
-<script>
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
-
-
-        var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
-        var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
-
-        var themeToggleDarkIcon_2 = document.getElementById('theme-toggle-dark-icon-2');
-        var themeToggleLightIcon_2 = document.getElementById('theme-toggle-light-icon-2');
-
-        // Change the icons inside the button based on previous settings
-        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia(
-            '(prefers-color-scheme: dark)').matches)) {
-            themeToggleLightIcon.classList.remove('hidden');
-            if (themeToggleDarkIcon_2) {
-                themeToggleLightIcon_2.classList.remove('hidden');
-            }
-        } else {
-            themeToggleDarkIcon.classList.remove('hidden');
-            if (themeToggleDarkIcon_2) {
-                themeToggleDarkIcon_2.classList.remove('hidden');
-            }
-        }
-
-
-        var themeToggleBtn_2 = document.getElementById('theme-toggle-2');
-        if (themeToggleBtn_2) {
-
-            themeToggleBtn_2.addEventListener('click', function () {
-
-                // toggle icons inside button
-                themeToggleDarkIcon_2.classList.toggle('hidden');
-                themeToggleLightIcon_2.classList.toggle('hidden');
-
-                sync_theme()
-
-            });
-        }
-
-
-        var themeToggleBtn = document.getElementById('theme-toggle');
-
-        themeToggleBtn.addEventListener('click', function () {
-
-            // toggle icons inside button
-            themeToggleDarkIcon.classList.toggle('hidden');
-            themeToggleLightIcon.classList.toggle('hidden');
-
-            sync_theme()
-
-
-        });
-
-
-        function sync_theme() {
-            // if set via local storage previously
-            if (localStorage.getItem('color-theme')) {
-                if (localStorage.getItem('color-theme') === 'light') {
-                    document.documentElement.classList.add('dark');
-                    localStorage.setItem('color-theme', 'dark');
-                } else {
-                    document.documentElement.classList.remove('dark');
-                    localStorage.setItem('color-theme', 'light');
-                }
-                // if NOT set via local storage previously
-            } else {
-                if (document.documentElement.classList.contains('dark')) {
-                    document.documentElement.classList.remove('dark');
-                    localStorage.setItem('color-theme', 'light');
-                } else {
-                    document.documentElement.classList.add('dark');
-                    localStorage.setItem('color-theme', 'dark');
-                }
-            }
-
-        }
-
-
-
-        document.addEventListener('DOMContentLoaded', function () {
-            // open
-            const burger = document.querySelectorAll('.navbar-burger');
-            const menu = document.querySelectorAll('.navbar-menu');
-
-            if (burger.length && menu.length) {
-                for (var i = 0; i < burger.length; i++) {
-                    burger[i].addEventListener('click', function () {
-                        for (var j = 0; j < menu.length; j++) {
-                            menu[j].classList.toggle('hidden');
-                        }
-                    });
-                }
-            }
-
-            // close
-            const close = document.querySelectorAll('.navbar-close');
-            const backdrop = document.querySelectorAll('.navbar-backdrop');
-
-            if (close.length) {
-                for (var i = 0; i < close.length; i++) {
-                    close[i].addEventListener('click', function () {
-                        for (var j = 0; j < menu.length; j++) {
-                            menu[j].classList.toggle('hidden');
-                        }
-                    });
-                }
-            }
-        
-
-            if (backdrop.length) {
-                for (var i = 0; i < backdrop.length; i++) {
-                    backdrop[i].addEventListener('click', function () {
-                        for (var j = 0; j < menu.length; j++) {
-                            menu[j].classList.toggle('hidden');
-                        }
-                    });
-                }
-            }
-        });
-</script>
+<footer>
+    <div class="footer w-full h-44 absolute bottom-0 left-0 grid grid-cols-4 grid-rows-2 text-gray-300 ">
+        <!-- ////////////////////////////////////////Contact section////////////////////////////////////////////// -->
+        <div class=" pb-4 mx-4">
+            <ul class=" pb-4 h-12 m-4 text-sm font-medium justify-center"> Contact us 
+                <li class="text-sm font-normal pt-2 flex flex-row items-center">
+                    <img class="w-4 h-4 m-1" src="assets/phone-6015.svg" alt="">+91 456 8976 000
+                    </li>
+                <li class="text-sm font-normal pt-2 flex flex-row items-center">
+                    <img class="w-4 h-4 m-1" src="assets/mail-message-5778.svg" alt="">
+                     info@gmail.com</li>
+            </ul>
+        </div>
+        <!-- ///////////////////////////////////////////Company///////////////////////////////////////////////////////// -->
+        <div class="comapany  text-sm font-semibold   m-4">
+            <span class="font-medium ">Company</span>
+            <ul class="text-xs pt-3 px-2 font-normal">
+                <li class="brief">About us</li>
+                <li class="brief">Home</li>
+                <li class="brief">Career </li>
+                <li class="brief">Contact us</li>
+            </ul>
+        </div>
+        <!-- //////////////////////////////////////////Quick links ///////////////////////////////////////////////////// -->
+        <div class="links   text-sm font-semibold 
+          m-4"> Quick links
+            <ul class="text-xs pt-3 px-2 font font-normal"> 
+                <li>
+                    <a href="#">links</a>
+                </li>
+                <li>
+                    <a href="#">links</a>
+                </li>
+                <li>
+                    <a href="#">links</a>
+                </li>
+                <li>
+                    <a href="#">links</a>
+                </li>
+            </ul>
+        </div>
+        <!-- ///////////////////////////////////////Help suppport//////////////////////////////////////////////////////////// -->
+        <div class="help   text-sm font-semibold 
+         m-4"> Help & Support
+            <ul class="text-xs pt-3 px-2 font font-normal"> 
+               
+                <li>
+                    <a href="#">Privacy policy</a>
+                </li>
+                <li>
+                    <a href="#">Terms & conditions</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+        <!-- //////////////////////////////////////Social media////////////////////////////////////////////////////////////////// -->
+        <div class="social  text-sm font-semibold  mx-4 my-4  col-start-2 col-end-4 items-center content-center
+         "> 
+           <ul class="flex flex-row  gap-x-4 pt-4 justify-center items-center">
+                <span>Let's get social :</span> 
+               <li class="icons">
+                   <svg width="20px" height="20px" class=" text-white bg-white  rounded-xl " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.87 28.87" id="instagram"><defs><linearGradient id="a" x1="-1.84" x2="32.16" y1="30.47" y2="-3.03" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fed576"></stop><stop offset=".26" stop-color="#f47133"></stop><stop offset=".61" stop-color="#bc3081"></stop><stop offset="1" stop-color="#4c63d2"></stop></linearGradient></defs><g><g><rect width="28.87" height="28.87" fill="url(#a)" rx="6.48" ry="6.48"></rect><g><path fill="#fff" d="M10 5h9c.2.1.5.1.7.2a4.78 4.78 0 0 1 3.8 3.3 8 8 0 0 1 .3 1.5v8.8a6.94 6.94 0 0 1-1.2 3.1 5.51 5.51 0 0 1-4.5 1.9h-7.5a5.49 5.49 0 0 1-3.7-1.2A5.51 5.51 0 0 1 5 18.14v-7a7.57 7.57 0 0 1 .1-1.5 4.9 4.9 0 0 1 3.8-4.3zm-3.1 9.5v3.9a3.42 3.42 0 0 0 3.7 3.7q3.9.15 7.8 0c2.3 0 3.6-1.4 3.7-3.7q.15-3.9 0-7.8a3.52 3.52 0 0 0-3.7-3.7q-3.9-.15-7.8 0a3.42 3.42 0 0 0-3.7 3.7z"></path><path fill="#fff" d="M9.64 14.54a4.91 4.91 0 0 1 4.9-4.9 5 5 0 0 1 4.9 4.9 4.91 4.91 0 0 1-4.9 4.9 5 5 0 0 1-4.9-4.9zm4.9-3.1a3.05 3.05 0 1 0 3 3 3 3 0 0 0-3-3z"></path><path fill="#fff" d="M18.34 9.44a1.16 1.16 0 0 1 1.2-1.2 1.29 1.29 0 0 1 1.2 1.2 1.2 1.2 0 0 1-2.4 0z"></path></g></g></g></svg>
+               </li>
+               <li class="icons">
+                   <svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" id="facebook"><path fill="#1877f2" d="M1024,512C1024,229.23016,794.76978,0,512,0S0,229.23016,0,512c0,255.554,187.231,467.37012,432,505.77777V660H302V512H432V399.2C432,270.87982,508.43854,200,625.38922,200,681.40765,200,740,210,740,210V336H675.43713C611.83508,336,592,375.46667,592,415.95728V512H734L711.3,660H592v357.77777C836.769,979.37012,1024,767.554,1024,512Z"></path><path fill="#fff" d="M711.3,660,734,512H592V415.95728C592,375.46667,611.83508,336,675.43713,336H740V210s-58.59235-10-114.61078-10C508.43854,200,432,270.87982,432,399.2V512H302V660H432v357.77777a517.39619,517.39619,0,0,0,160,0V660Z"></path></svg>
+               </li>
+               <li class="icons">
+                   <svg width="20px" height="20px" class=" text-white bg-white  rounded-xl "xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                       <path fill="#0288D1" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"></path><path fill="#FFF" d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"></path>
+                       </svg>
+               </li>
+               <li class="icons">
+                   <svg width="20px" height="20px" class=" text-white bg-white rounded-xl " xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 1668.56 1221.19" viewBox="0 0 1668.56 1221.19" id="twitter-x"><path d="M283.94,167.31l386.39,516.64L281.5,1104h87.51l340.42-367.76L984.48,1104h297.8L874.15,558.3l361.92-390.99
+                       h-87.51l-313.51,338.7l-253.31-338.7H283.94z M412.63,231.77h136.81l604.13,807.76h-136.81L412.63,231.77z" transform="translate(52.39 -25.059)"></path></svg>
+               </li>
+               <li>
+                    <div class="text-xs font-normal" >
+                        | Copyright 2024 All rights reserved
+                    </div>
+                    
+               </li>
+           </ul>
+          
+       </div>
+    </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
