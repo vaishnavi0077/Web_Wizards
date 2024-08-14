@@ -1,3 +1,10 @@
+:root{
+  --bgcol3:linear-gradient(0deg, rgba(0,0,0,1) 24%, rgba(66,66,66,1) 100%);
+  --bgcol2 :linear-gradient(0deg, rgba(7,117,19,1) 0%, rgba(0,0,0,1) 39%) ;
+  --bgcol1 : linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,6,78,1) 100%);
+  --buttoncol :white;
+}
+
 .dis {
   display: flex;
   justify-content: space-between;
@@ -28,4 +35,11 @@
 .mult_div {
   padding: 10px;
   cursor: pointer;
+}
+.header{
+ background: var(--bgcol1);
+}
+.footer{
+background: var(--bgcol1);
+
 }
